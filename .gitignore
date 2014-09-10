@@ -1,0 +1,8 @@
+AppPackages/
+ARM/
+Debug/
+Release/
+ipch/
+Generated Files/
+chakra-wp81.sdf
+chakra-wp81.v12.suo
