@@ -123,7 +123,7 @@ extern "C"{
 
 #include <winapifamily.h>
 #pragma region Desktop Family
-#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)
 
 
 
@@ -845,6 +845,17 @@ EXTERN_C const IID IID_IEnumDebugExtendedPropertyInfo;
 
 EXTERN_C const IID IID_IPerPropertyBrowsing2;
 
+typedef struct tagCALPOLESTR
+{
+	ULONG cElems;
+	/* [size_is] */ LPOLESTR *pElems;
+} 	CALPOLESTR;
+typedef struct tagCADWORD
+{
+	ULONG cElems;
+	/* [size_is] */ DWORD *pElems;
+} 	CADWORD;
+
 #if defined(__cplusplus) && !defined(CINTERFACE)
     
     MIDL_INTERFACE("51973C54-CB0C-11d0-B5C9-00A0244A0E7A")
@@ -1351,7 +1362,7 @@ EXTERN_C const IID IID_IDebugPropertyEnumType_Registers;
 /* interface __MIDL_itf_dbgprop_0000_0010 */
 /* [local] */ 
 
-#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) */
+#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP) */
 #pragma endregion
 
 

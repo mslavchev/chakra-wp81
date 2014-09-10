@@ -28,7 +28,7 @@ extern "C" {
 #endif
 
 #pragma region Desktop Family
-#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)
 
 /// <summary>
 ///     An error code returned from a Chakra hosting API.
@@ -2097,7 +2097,7 @@ WINAPI
 JsIsEnumeratingHeap(
     _Out_ bool *isEnumeratingHeap);
 
-#endif // WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+#endif // WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)
 #pragma endregion
 
 #ifdef __cplusplus

@@ -255,7 +255,7 @@ extern "C"{
 #include <winapifamily.h>
 
 #pragma region Desktop Family
-#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)
 /* GUIDs
  ********/
 
@@ -3333,7 +3333,7 @@ EXTERN_C const IID IID_IActiveScriptStringCompare;
 /* interface __MIDL_itf_activscp_0000_0026 */
 /* [local] */ 
 
-#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) */
+#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP) */
 #pragma endregion
 
 #endif  // __ActivScp_h

@@ -127,7 +127,7 @@ extern "C"{
 //
 #include <winapifamily.h>
 #pragma region Desktop Family
-#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)
 // Disable /W4 compiler warning C4201: nameless struct/union
 #pragma warning(push)
 #pragma warning(disable:4201)  // Disable C4201: nameless struct/union
@@ -1498,7 +1498,7 @@ EXTERN_C const IID IID_IActiveScriptProfilerCallback3;
 
 // Restore the previous setting for C4201 compiler warning
 #pragma warning(pop)
-#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) */
+#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP) */
 #pragma endregion
 
 

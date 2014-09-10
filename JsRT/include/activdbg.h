@@ -964,7 +964,7 @@ extern "C"{
 //
 #include <winapifamily.h>
 #pragma region Desktop Family
-#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)
 #pragma comment(lib,"uuid.lib")
 //
 // Declarations for ActiveX Scripting authoring/Debugging.
@@ -9369,7 +9369,7 @@ DefaultDebugSessionProvider;
 
 #endif  // __ActivDbg_h
 
-#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) */
+#endif /* WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP) */
 #pragma endregion
 
 
